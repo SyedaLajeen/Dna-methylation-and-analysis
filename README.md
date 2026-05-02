@@ -53,28 +53,6 @@ Methylation at gene **promoters** typically **silences gene expression** by prev
 
 ---
 
-## 🗂️ Repository Structure
-
-```
-Dna-methylation-and-analysis/
-│
-├── 📁 falco/
-│   └── Quality control reports from Falco (FastQC-compatible)
-│       for subset_1.fastq and subset_2.fastq
-│
-├── 📁 bigwig/
-│   └── BigWig coverage/methylation tracks for genome browser
-│       visualisation (output of MethylDackel)
-│
-├── 📁 metilene_qval_plots/
-│   └── Q-value distribution plots from Metilene DMR calling
-│       (differentially methylated region significance plots)
-│
-└── README.md
-```
-
----
-
 ## 🔬 Analysis Pipeline
 
 The complete pipeline follows 6 steps as defined in the GTN tutorial:
@@ -372,30 +350,3 @@ Contains Q-value distribution plots output by Metilene after DMR calling. These 
 | **bamCoverage** | deepTools | BAM → BigWig conversion for visualisation | https://deeptools.readthedocs.io |
 | **Metilene** | — | Differentially methylated region (DMR) calling | https://www.bioinf.uni-leipzig.de/Software/metilene/ |
 | **Galaxy** | — | Cloud bioinformatics platform (no install needed) | https://usegalaxy.eu |
-
----
-
-## 📖 Glossary
-
-| Term | Definition |
-|---|---|
-| **CpG** | Cytosine–phosphate–Guanine dinucleotide — the primary site of DNA methylation in mammals |
-| **5mC** | 5-methylcytosine — methylated cytosine base |
-| **Bisulfite conversion** | Chemical treatment that converts unmethylated C → U (→T) while leaving methylated C unchanged |
-| **Bisulfite sequencing (BS-Seq)** | Sequencing after bisulfite conversion to detect methylation at single-CpG resolution |
-| **bwameth** | Bisulfite-aware aligner based on BWA-MEM |
-| **MethylDackel** | Tool for extracting CpG methylation from bisulfite BAM files |
-| **bedGraph** | Tab-delimited file format: chr, start, end, value — used to represent methylation per CpG |
-| **BigWig** | Binary compressed format for genome-wide signal tracks — used in genome browsers |
-| **DMR** | Differentially Methylated Region — genomic region with statistically different methylation between conditions |
-| **Metilene** | Tool for calling DMRs between two groups using 2D segmentation |
-| **Hypermethylation** | Higher methylation in tumour vs. normal — often silences tumour suppressors |
-| **Hypomethylation** | Lower methylation in tumour vs. normal — often activates oncogenes |
-| **mbias** | MethylDackel diagnostic mode: detects position-dependent methylation artefacts along reads |
-| **Q-value** | False discovery rate (FDR)-corrected p-value — used in Metilene DMR significance |
-
---
-
-
-
-*DNA Methylation Data Analysis · Bisulfite Sequencing · Galaxy Platform · GTN Tutorial*
