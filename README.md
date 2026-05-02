@@ -394,7 +394,7 @@ Contains Q-value distribution plots output by Metilene after DMR calling. These 
 | **mbias** | MethylDackel diagnostic mode: detects position-dependent methylation artefacts along reads |
 | **Q-value** | False discovery rate (FDR)-corrected p-value — used in Metilene DMR significance |
 
----
+--
 
 
 
